@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Adrià de Juan García"
+title                    : "Adrià's Homepage"
 title_separator          : "-"
 name                     : &name "Adrià de Juan García" # disclaimer name
 description              : &description "personal description"
@@ -23,9 +23,9 @@ repository               : "adriadejuan/adriadejuan.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Adrià de Juan"
+  name             : "Adrià de Juan García"
   pronouns         : # example: "she/her"  
-  bio              : "..."
+  bio              : "Data Consultant"
   location         : "Barcelona, Spain"
   employer         : "KPMG"
   uri              : # URL
