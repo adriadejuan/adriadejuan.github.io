@@ -4,7 +4,7 @@ title: "Events"
 author_profile: true
 redirect_from: 
   - /events/
-  - /events.md
+  - /events.html
 ---
 
 I've had the opportunity to attend these conferences, both as a professional and out of personal interest. These events have allowed me to stay up to date with industry trends, explore emerging technologies, and connect with experts in the field.  
