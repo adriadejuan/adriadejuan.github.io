@@ -1,0 +1,55 @@
+---
+layout: archive
+title: "Events"
+permalink: /events/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.event_category %}
+  {% for category in site.event_category %}
+    {% assign title_shown = false %}
+    {% for event in site.events reversed %}
+      {% if event.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      <table>
+        <tr>
+          <th>Event</th>
+          <th>Organiser</th>
+          <th>Date</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>{{ event.name }}</td>
+          <td>{{ event.organiser }}</td>
+          <td>{{ event.date }}</td>
+          <td>{{ event.location }}</td>
+        </tr>
+      </table>
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  <h2>All Events</h2><hr />
+  {% for event in site.events reversed %}
+    <table>
+      <tr>
+        <th>Event</th>
+        <th>Organiser</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td>{{ event.name }}</td>
+        <td>{{ event.organiser }}</td>
+        <td>{{ event.date }}</td>
+        <td>{{ event.location }}</td>
+      </tr>
+    </table>
+  {% endfor %}
+{% endif %}
